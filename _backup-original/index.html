@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sathish R - Professional Frontend Web Developer & UI/UX Designer Portfolio">
+    <meta name="keywords" content="Frontend Developer, UI/UX Designer, WordPress Developer, Web Developer, Bangalore">
+    <meta name="author" content="Sathish R">
+    <title>Sathish R | Frontend Developer & UI/UX Designer</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">SR</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="logo-text">Sathish<span class="logo-dot">R</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="Sathish_R_Resume.pdf" class="btn btn-resume" download>
+                            <i class="fas fa-download me-2"></i>Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="bg-grid"></div>
+            <div class="bg-glow bg-glow-1"></div>
+            <div class="bg-glow bg-glow-2"></div>
+            <div class="bg-glow bg-glow-3"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="name-highlight">Sathish R</span>
+                        </h1>
+                        <div class="hero-roles-container">
+                            <span class="role-prefix">I'm a </span>
+                            <span class="role-text" id="typewriter"></span>
+                            <span class="role-cursor">|</span>
+                        </div>
+                        <p class="hero-description">
+                            I create beautiful, responsive, and user-friendly websites with modern technologies.
+                            Specializing in frontend development, UI/UX design, and WordPress solutions.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary-main">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary-main">
+                                <span>Let's Talk</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="hero-image-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="image-frame">
+                            <div class="frame-border"></div>
+                            <div class="image-container">
+                                <img src="images/sathish.jpeg" alt="Sathish R" class="hero-image">
+                            </div>
+                            <div class="floating-tag tag-1">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Code</span>
+                            </div>
+                            <div class="floating-tag tag-2">
+                                <i class="fas fa-palette"></i>
+                                <span>Creative Design</span>
+                            </div>
+                            <div class="floating-tag tag-3">
+                                <i class="fas fa-rocket"></i>
+                                <span>Fast Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section-->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">Passionate about creating exceptional digital experiences</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image-area" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about-image-box">
+                            <img src="images/sathish-profile.jpeg" alt="About Sathish R" class="about-image">
+                            <div class="experience-card">
+                                <div class="exp-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="exp-content">
+                                    <span class="exp-years">1+</span>
+                                    <span class="exp-text">Years of<br>Experience</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="decoration-square"></div>
+                        <div class="decoration-circle"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <h3 class="about-heading">Creative Frontend Developer & UI/UX Designer</h3>
+                        <p class="about-text">
+                            I'm a dedicated <strong>Frontend Web Developer</strong> and <strong>UI/UX Designer</strong>
+                            based in Bangalore, with one year of professional experience in building responsive
+                            websites, WordPress solutions, and creating stunning user interfaces.
+                        </p>
+                        <p class="about-text">
+                            My expertise lies in transforming ideas into beautiful, functional digital experiences. I
+                            believe in clean code, modern design principles, and delivering projects that exceed
+                            expectations.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-row">
+                                <div class="info-item">
+                                    <i class="fas fa-user"></i>
+                                    <div>
+                                        <span class="label">Name</span>
+                                        <span class="value">Sathish R</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <span class="label">Location</span>
+                                        <span class="value">Chidambaram, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <span class="label">Email</span>
+                                        <span class="value">rrsathish65@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <span class="label">Phone</span>
+                                        <span class="value">+91 6374363370</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-actions">
+                            <a href="Sathish_R_Resume.pdf" class="btn btn-primary-main" download>
+                                <i class="fas fa-download me-2"></i>Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-5">
+        <div class="container">
+
+            <h2 class="text-center text-white mb-5">Skills & Technologies</h2>
+
+            <div class="row g-4">
+
+                <!-- Frontend -->
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h4>Frontend</h4>
+
+                        <div class="skills-item">
+                            <p>HTML <span>95%</span></p>
+                            <div class="skills-bar">
+                                <div class="skills-progress" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills-item">
+                            <p>CSS <span>90%</span></p>
+                            <div class="skills-bar">
+                                <div class="skills-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills-item">
+                            <p>Bootstrap <span>85%</span></p>
+                            <div class="skills-bar">
+                                <div class="skills-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills-item">
+                            <p>JavaScript <span>75%</span></p>
+                            <div class="skills-bar">
+                                <div class="skills-progress" data-width="75"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h4>Tools</h4>
+
+                        <div class="skills-list">
+                            <div class="skills-chip"><i class="fab fa-wordpress"></i>WordPress</div>
+                            <div class="skills-chip"><i class="fab fa-figma"></i>Figma</div>
+                            <div class="skills-chip"><i class="fas fa-globe"></i>Hostinger</div>
+                            <div class="skills-chip"><i class="fas fa-palette"></i>Canva</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h4>AI & Media</h4>
+
+                        <div class="skills-list">
+                            <div class="skills-chip"><i class="fas fa-image"></i>Image Editing</div>
+                            <div class="skills-chip"><i class="fas fa-video"></i>Video Editing</div>
+                            <div class="skills-chip"><i class="fas fa-robot"></i>AI Tools</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Professional -->
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h4>Professional</h4>
+
+                        <div class="skills-list">
+                            <div class="skills-chip"><i class="fas fa-bolt"></i>Quick Learner</div>
+                            <div class="skills-chip"><i class="fas fa-brain"></i>Creative Thinking</div>
+                            <div class="skills-chip"><i class="fas fa-users"></i>Team Player</div>
+                            <div class="skills-chip"><i class="fas fa-puzzle-piece"></i>Problem Solving</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My professional journey and academic background</p>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+
+                <!-- Work Experience -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <span class="timeline-date">March 2025 - Present</span>
+                                <span class="timeline-type">Full-time</span>
+                            </div>
+                            <h3 class="timeline-title">Web Developer</h3>
+                            <h4 class="timeline-company">
+                                <i class="fas fa-building"></i> Plumb5
+                            </h4>
+                            <ul class="timeline-list">
+                                <li>Developed responsive websites and landing pages for clients</li>
+                                <li>Built and customized WordPress websites with modern themes</li>
+                                <li>Created UI layouts and social media creatives</li>
+                                <li>Optimized website performance and improved user experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker">
+                        <div class="marker-icon marker-intern">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <span class="timeline-date">Sep 2025 - Oct 2025</span>
+                                <span class="timeline-type type-intern">Internship</span>
+                            </div>
+                            <h3 class="timeline-title">UI/UX Design Intern</h3>
+                            <h4 class="timeline-company">
+                                <i class="fas fa-building"></i> NoviTech R&D Private Limited
+                            </h4>
+                            <ul class="timeline-list">
+                                <li>Created wireframes and UI screens using Figma</li>
+                                <li>Learned and applied UI/UX design principles</li>
+                                <li>Designed application interfaces and dashboard UIs</li>
+                                <li>Collaborated with the design team on various projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker">
+                        <div class="marker-icon marker-edu">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <span class="timeline-date">Completed</span>
+                                <span class="timeline-type type-edu">Education</span>
+                            </div>
+                            <h3 class="timeline-title">B.E Computer Science Engineering</h3>
+                            <h4 class="timeline-company">
+                                <i class="fas fa-university"></i> Mahendra College of Engineering, Salem
+                            </h4>
+                            <p class="timeline-desc">
+                                Completed Bachelor's degree in Computer Science Engineering with focus on software
+                                development, web technologies, and programming fundamentals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work that showcases my skills</p>
+            </div>
+            <div class="row g-4">
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/ricetech.png" alt="Shrishti Aircon Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://ricetechmachinery.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Industrial</span>
+                            <h3 class="project-title">Ricetech Machinery</h3>
+                            <p class="project-desc">
+                                Industrial machinery company website presenting products, technical specifications,
+                                and company information with professional and structured design.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/vansika.png" alt="Vanshika Natures Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://vanshikanatures.in/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Real Estate</span>
+                            <h3 class="project-title">Vanshika Natures</h3>
+                            <p class="project-desc">
+                                Modern real estate website designed to showcase premium villa projects,
+                                property highlights, amenities, and location advantages with elegant layout
+                                and responsive user experience.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>Real Estate</span>
+                                <span>Lead Generation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/urjacon.png" alt="Urjacon Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://www.urjacon.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Corporate</span>
+                            <h3 class="project-title">Urjacon</h3>
+                            <p class="project-desc">
+                                Corporate website designed to present company vision, services,
+                                and sustainable energy solutions with modern and responsive layout.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/dmc.png" alt="dmc Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="http://dmcbesantnagar.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Restaurant</span>
+                            <h3 class="project-title">DMC Besant Nagar</h3>
+                            <p class="project-desc">
+                                Restaurant website showcasing menu items, food specialties, and brand identity
+                                with modern layout and engaging visual presentation.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/trully.png" alt="Shrishti Aircon Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://www.trulyy.in/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Brand Website</span>
+                            <h3 class="project-title">Trulyy</h3>
+                            <p class="project-desc">
+                                Brand-focused website built with elegant storytelling design,
+                                visual branding elements, and modern user experience.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 9 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/css.png" alt="Shrishti Aircon Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://csssecure.in/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Security Services</span>
+                            <h3 class="project-title">CSS Secure</h3>
+                            <p class="project-desc">
+                                Security services company website designed with strong branding,
+                                service clarity, and lead-focused contact structure.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/shrishti.png" alt="Shrishti Aircon Project">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://shrishtiaircon.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Business Website</span>
+                            <h3 class="project-title">Shrishti Aircon</h3>
+                            <p class="project-desc">
+                                Modern corporate website for an air conditioning company showcasing services,
+                                projects, and company expertise with responsive and SEO-friendly design.
+                            </p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>Responsive</span>
+                                <span>SEO Optimized</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/sathvath.png" alt="Satvat Realt">
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://satvatrealty.in/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Visit Site</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Real Estate</span>
+                            <h3 class="project-title">Satvat Realty</h3>
+                            <p class="project-desc">
+                                Premium real estate website designed to showcase properties, highlight
+                                amenities, and generate quality leads with modern UI and smooth navigation.
+                            </p>
+                            <div class="project-tech">
+                                <span>WordPress</span>
+                                <span>Real Estate</span>
+                                <span>Lead Generation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-wrapper">
+                                <img src="images/hr.png" alt="Shrishti Aircon Project">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="project-link disabled">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Figma Project</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">UI/UX Design</span>
+                            <h3 class="project-title">i Talento</h3>
+                            <p class="project-desc">
+                                Figma-based HR management dashboard design featuring clean layout,
+                                modern components, and user-centered workflow experience.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional certifications and achievements</p>
+            </div>
+            <div class="row g-4">
+
+                <!-- Certificate 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certificate-card">
+                        <div class="certificate-badge">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <span class="cert-id">ID: UIUXINF291</span>
+                            <h3 class="cert-title">UI/UX Design Internship</h3>
+                            <div class="cert-meta">
+                                <span><i class="fas fa-building"></i> NoviTech R&D</span>
+                                <span><i class="fas fa-calendar"></i> Sep - Oct 2025</span>
+                            </div>
+                            <p class="cert-desc">One-month intensive internship in UI/UX Design, creating wireframes and
+                                application interfaces.</p>
+                            <a href="certificates/uiux-certificate.pdf" target="_blank" class="btn btn-view">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certificate-card">
+                        <div class="certificate-badge badge-code">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <span class="cert-id">ID: NT_B48FSD287</span>
+                            <h3 class="cert-title">Full Stack Development</h3>
+                            <div class="cert-meta">
+                                <span><i class="fas fa-building"></i> NoviTech R&D</span>
+                                <span><i class="fas fa-calendar"></i> Sep - Nov 2025</span>
+                            </div>
+                            <p class="cert-desc">30-day MasterClass in Full Stack Development covering modern web
+                                technologies.</p>
+                            <a href="certificates/fullstack-certificate.pdf" target="_blank" class="btn btn-view">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certificate-card">
+                        <div class="certificate-badge badge-data">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <span class="cert-id">ID: NT_B8DA037</span>
+                            <h3 class="cert-title">Data Analytics</h3>
+                            <div class="cert-meta">
+                                <span><i class="fas fa-building"></i> NoviTech R&D</span>
+                                <span><i class="fas fa-calendar"></i> Jan - Feb 2025</span>
+                            </div>
+                            <p class="cert-desc">30-day MasterClass in Data Analytics, learning data visualization and
+                                analysis.</p>
+                            <a href="certificates/dataanalytics-certificate.pdf" target="_blank" class="btn btn-view">
+                                <i class="fas fa-eye"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? Let's discuss how I can help</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="contact-info-card" data-aos="fade-right" data-aos-duration="1000">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <p class="contact-desc">Feel free to reach out to me for any project inquiries or collaboration
+                            opportunities.</p>
+
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="label">Name</span>
+                                    <span class="value">Sathish R</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="label">Location</span>
+                                    <span class="value">Chidambaram, India</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="label">Email</span>
+                                    <span class="value">rrsathish65@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="label">Phone</span>
+                                    <span class="value">+91 6374363370</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h4>Follow Me</h4>
+                            <div class="social-links">
+                                <a href="mailto:rrsathish65@gmail.com" class="social-btn" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="tel:+916374363370" class="social-btn" title="Phone">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                                <a href="#" class="social-btn" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-btn" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name"><i class="fas fa-user me-2"></i>Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email"><i class="fas fa-envelope me-2"></i>Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone Number">
+                                        <label for="phone"><i class="fas fa-phone me-2"></i>Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Subject" required>
+                                        <label for="subject"><i class="fas fa-tag me-2"></i>Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Your Message" style="height: 150px" required></textarea>
+                                        <label for="message"><i class="fas fa-comment me-2"></i>Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-submit">
+                                        <span>Send Message</span>
+                                        <i class="fas fa-paper-plane"></i>
+                                        <div class="btn-loader"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">Sathish<span>R</span></a>
+                    <p class="footer-tagline">Frontend Developer | UI/UX Designer | WordPress Developer</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:rrsathish65@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+916374363370" class="social-link"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.linkedin.com/in/sathish-r-9b7a19340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Sathishr1612" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <strong>Sathish R</strong>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
