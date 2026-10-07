@@ -76,6 +76,24 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+/* Lenis soft scrolling (js/main.js) — it animates the scroll itself, so native smoothing must be off */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+html.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-stopped {
+    overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
 body {
     margin: 0;
     background: var(--cream);
@@ -990,7 +1008,7 @@ img {
 
 /* ---------- Statement ---------- */
 .statement {
-    padding: var(--section) 0;
+    padding: var(--section) 0 48px;
     background: var(--white);
     color: var(--forest);
 }
@@ -1016,8 +1034,8 @@ img {
 
 .statement-sub {
     grid-column: 7 / 12;
-    margin-top: 56px;
-    padding-top: 28px;
+    margin-top: 32px;
+    padding-top: 20px;
     border-top: 1px solid var(--gold);
     font-size: 18px;
     color: var(--muted);
@@ -1026,6 +1044,7 @@ img {
 @media (max-width: 1023px) {
     .statement {
         padding-top: 88px;
+        padding-bottom: 40px;
     }
 
     .statement-text {
@@ -1040,6 +1059,7 @@ img {
 @media (max-width: 639px) {
     .statement {
         padding-top: 64px;
+        padding-bottom: 36px;
     }
 
     .statement-sub {
@@ -1051,8 +1071,20 @@ img {
 
 /* ---------- Work ---------- */
 .work {
-    padding: var(--section) 0;
+    padding: 64px 0 var(--section);
     background: var(--cream);
+}
+
+@media (max-width: 1023px) {
+    .work {
+        padding-top: 56px;
+    }
+}
+
+@media (max-width: 639px) {
+    .work {
+        padding-top: 44px;
+    }
 }
 
 .work-head {

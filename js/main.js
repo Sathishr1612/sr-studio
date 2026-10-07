@@ -29,6 +29,40 @@
     window.addEventListener('scroll', onScroll, { passive: true });
 
     // ----------------------------------------
+    // Soft scroll (Lenis): eased mouse-wheel / trackpad scrolling.
+    // Touch devices keep their native scroll; skipped for reduced motion
+    // or if the CDN script didn't load.
+    // ----------------------------------------
+    let lenis = null;
+
+    if (window.Lenis && !reduceMotion) {
+        lenis = new window.Lenis({
+            duration: 1.15,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            wheelMultiplier: 1,
+        });
+
+        const raf = (time) => {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
+        requestAnimationFrame(raf);
+
+        // in-page links (#work, #contact…) glide to their section, clear of the fixed header
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a[href^="#"]');
+            if (!link) return;
+            const id = link.getAttribute('href');
+            const target = id.length > 1 && document.querySelector(id);
+            if (!target) return;
+            e.preventDefault();
+            lenis.start();
+            lenis.scrollTo(target, { offset: -(header.offsetHeight + 16) });
+            history.pushState(null, '', id);
+        });
+    }
+
+    // ----------------------------------------
     // Mobile menu
     // ----------------------------------------
     let menuTimer;
@@ -38,6 +72,7 @@
         menuBtn.setAttribute('aria-expanded', String(open));
         header.classList.toggle('menu-open', open);
         document.body.classList.toggle('menu-locked', open);
+        if (lenis) open ? lenis.stop() : lenis.start();
 
         if (open) {
             menu.hidden = false;
