@@ -2051,12 +2051,25 @@ a.project-media:hover img {
 }
 
 /* ---------- Process ---------- */
+/* Background: a dark workspace photo (Unsplash, free licence) under a brand-green overlay.
+   The overlay is heaviest on the left behind the heading and at the bottom behind the steps. */
 .process {
     padding: var(--section) 0;
     background:
-        radial-gradient(ellipse 45% 55% at 82% 22%, rgba(212, 180, 131, 0.1), transparent 70%),
-        linear-gradient(180deg, var(--green) 0%, #183429 100%);
+        linear-gradient(90deg, rgba(27, 58, 47, 0.95) 0%, rgba(27, 58, 47, 0.8) 45%, rgba(27, 58, 47, 0.62) 100%),
+        linear-gradient(180deg, rgba(24, 52, 41, 0) 35%, rgba(24, 52, 41, 0.9) 100%),
+        url("../images/process-workspace.jpg") center 65% / cover no-repeat,
+        var(--green);
     color: var(--cream);
+}
+
+@media (max-width: 639px) {
+    .process {
+        background:
+            linear-gradient(180deg, rgba(27, 58, 47, 0.78) 0%, rgba(27, 58, 47, 0.9) 45%, rgba(24, 52, 41, 0.97) 100%),
+            url("../images/process-workspace.jpg") 60% top / auto 560px no-repeat,
+            var(--green);
+    }
 }
 
 .process .display {
