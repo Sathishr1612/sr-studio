@@ -31,7 +31,7 @@
     --wrap: 1200px;
     --wrap-wide: 1360px;
     --gutter: 24px;
-    --section: 144px;
+    --section: 112px;
     --header-h: 80px;
     --header-h-small: 68px;
 
@@ -50,14 +50,14 @@
 
 @media (max-width: 1023px) {
     :root {
-        --section: 104px;
+        --section: 88px;
     }
 }
 
 @media (max-width: 639px) {
     :root {
         --gutter: 20px;
-        --section: 76px;
+        --section: 64px;
         --header-h: 68px;
         --header-h-small: 64px;
     }
@@ -1081,7 +1081,7 @@ img {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     column-gap: 32px;
     align-items: end;
-    margin-top: 144px;
+    margin-top: 112px;
 }
 
 .work-head + .project {
@@ -1229,7 +1229,7 @@ a.project-media:hover img {
 
 /* More projects: compact grid, every project shows its own screenshot */
 .more {
-    margin-top: 160px;
+    margin-top: 112px;
 }
 
 .more-head {
@@ -1340,13 +1340,28 @@ a.project-media:hover img {
 /* Design project — slim horizontal row */
 .more-design {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr) auto;
+    grid-template-columns: 280px minmax(0, 1fr) auto;
     align-items: center;
     gap: 32px;
-    margin-top: 64px;
+    margin-top: 56px;
     padding: 20px 28px 20px 20px;
     border-radius: var(--r);
     background: var(--mint);
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px transparent;
+}
+
+.more-design:hover,
+.more-design:focus-visible {
+    box-shadow: 0 0 0 1px var(--gold), 0 24px 44px -28px rgba(16, 35, 28, 0.4);
+}
+
+.more-design:hover .more-design-tag,
+.more-design:focus-visible .more-design-tag {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: var(--cream);
 }
 
 .more-design-media {
@@ -1386,6 +1401,7 @@ a.project-media:hover img {
     text-transform: uppercase;
     white-space: nowrap;
     color: var(--green-rich);
+    transition: background-color var(--t) var(--ease), border-color var(--t) var(--ease), color var(--t) var(--ease);
 }
 
 /* Work — tablet */
@@ -1448,7 +1464,7 @@ a.project-media:hover img {
     }
 
     .more {
-        margin-top: 120px;
+        margin-top: 96px;
     }
 
     .more-grid {
@@ -1520,7 +1536,7 @@ a.project-media:hover img {
     }
 
     .more {
-        margin-top: 88px;
+        margin-top: 72px;
     }
 
     .more-head {
@@ -1920,7 +1936,9 @@ a.project-media:hover img {
 /* ---------- Process ---------- */
 .process {
     padding: var(--section) 0;
-    background: var(--green);
+    background:
+        radial-gradient(ellipse 45% 55% at 82% 22%, rgba(212, 180, 131, 0.1), transparent 70%),
+        linear-gradient(180deg, var(--green) 0%, #183429 100%);
     color: var(--cream);
 }
 
@@ -2069,9 +2087,55 @@ a.project-media:hover img {
 
 /* ---------- CTA ---------- */
 .cta {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     padding: var(--section) 0;
     background: var(--forest);
     color: var(--cream);
+}
+
+/* Background: a tilted wall of real project screenshots under a dark green overlay */
+.cta-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.cta-bg-wall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, max(340px, 28vw));
+    gap: 24px;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    opacity: 0.32;
+}
+
+.cta-bg-wall img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top left;
+    border-radius: 10px;
+}
+
+.cta-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(16, 35, 28, 0.94) 0%, rgba(16, 35, 28, 0.78) 50%, rgba(16, 35, 28, 0.9) 100%),
+        linear-gradient(180deg, var(--forest) 0%, transparent 22%, transparent 78%, var(--forest) 100%);
+}
+
+@media (max-width: 639px) {
+    .cta-bg-wall {
+        grid-template-columns: repeat(3, 260px);
+        gap: 14px;
+    }
 }
 
 .cta-inner {
